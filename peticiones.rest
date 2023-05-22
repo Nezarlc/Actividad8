@@ -1,0 +1,33 @@
+GET http://localhost:3000/api/inmuebles
+
+###
+
+POST http://localhost:3000/api/inmuebles
+Content-Type: application/json
+
+{
+    "piso": 10,
+    "letra": "C",
+    "extension": 33,
+    "numeroHab": 1,
+    "alquilado": true,
+    "nombreProp": "Sabina",
+    "email": "SabinaFea@gmail.com"
+}
+
+###
+
+PUT http://localhost:3000/api/inmuebles/646b87e6f221166b21411a5a
+Content-Type: application/json
+
+{
+    "email": "Sabina@gmail.com",
+    "numeroHab": 4,
+    "extension": 7,
+    "letra": "E",
+    "pepe": 3
+}
+
+###
+
+DELETE http://localhost:3000/api/inmuebles/646b8721f221166b21411a42
